@@ -1,0 +1,85 @@
+{
+	"variables": [],
+	"info": {
+		"name": "blitz",
+		"_postman_id": "cec54f6a-c715-81e0-a8d6-103b68473a14",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "schedule-movie",
+			"request": {
+				"url": "http://localhost:3000/api/schedule/movie",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"movie\" : \"MOV2899\",\n\t\"showdate\" : \"2016-10-05\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get-movies",
+			"request": {
+				"url": "http://localhost:3000/api/get_movies",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "schedule-cinema",
+			"request": {
+				"url": "http://localhost:3000/api/schedule/cinema",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cinema\" : \"0600\",\n\t\"showdate\" : \"2016-10-06\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "schedule-seat",
+			"request": {
+				"url": "http://localhost:3000/api/schedule/seat",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cinema\" : \"0200\",\n\t\"showdate\" : \"2016-10-06\",\n\t\"movie\" : \"MOV2898\",\n\t\"auditype\" : \"N\",\n\t\"showtime\" : \"18:20\",\n\t\"movieformat\" : \"2D\",\n\t\"price\" : \"50000\",\n\t\"loveseatprice\" : \"0\",\n\t\"from-schedule\": \"movie\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
